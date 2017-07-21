@@ -9,18 +9,32 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="64"
-   height="64"
-   viewBox="0 0 64.000001 64.000001"
+   width="256"
+   height="512"
+   viewBox="0 0 256 512"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="kuglo.svg"
-   inkscape:export-filename="/home/hsn6/sola/Kugloj/kuglo.png"
+   sodipodi:docname="sola_lumo.svg"
+   inkscape:export-filename="/home/hsn6/sola/Lumoj/sola_lumo.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
   <defs
-     id="defs4" />
+     id="defs4">
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter4307"
+       x="-0.29372227"
+       width="1.5874445"
+       y="-0.053980384"
+       height="1.1079608">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="12.484608"
+         id="feGaussianBlur4309" />
+    </filter>
+  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -28,9 +42,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="5.6"
-     inkscape:cx="31.219201"
-     inkscape:cy="25.816075"
+     inkscape:zoom="0.7"
+     inkscape:cx="112.2197"
+     inkscape:cy="111.45357"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -39,24 +53,10 @@
      inkscape:window-height="744"
      inkscape:window-x="0"
      inkscape:window-y="24"
-     inkscape:window-maximized="1"
-     inkscape:snap-bbox="true"
-     inkscape:snap-page="true"
-     inkscape:bbox-nodes="true"
-     inkscape:bbox-paths="true"
-     inkscape:snap-bbox-midpoints="true"
-     inkscape:snap-bbox-edge-midpoints="true"
-     inkscape:object-paths="true"
-     inkscape:snap-intersection-paths="true"
-     inkscape:object-nodes="true"
-     inkscape:snap-smooth-nodes="true"
-     inkscape:snap-midpoints="true"
-     inkscape:snap-center="true"
-     inkscape:snap-object-midpoints="true"
-     inkscape:snap-text-baseline="true">
+     inkscape:window-maximized="1">
     <inkscape:grid
        type="xygrid"
-       id="grid4134"
+       id="grid4136"
        empspacing="8" />
   </sodipodi:namedview>
   <metadata
@@ -75,12 +75,13 @@
      inkscape:label="Tavolo 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-988.36214)">
+     transform="translate(0,-540.36216)">
     <path
-       style="fill:#ffcc00;fill-rule:evenodd;stroke:#808080;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 64,1020.3621 -24,-16 -32,8 -8,8 8,8 32,8 24,-16"
-       id="path4136"
+       style="fill:#ffffff;fill-rule:evenodd;stroke:none;stroke-width:0.75792605px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter4307)"
+       d="m 82.190226,1036.8695 81.952724,-531.75377 -195.288904,0 76.955728,531.75377 z"
+       id="path4138"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccccc" />
+       transform="matrix(0.85765712,0,0,0.85765712,70.967088,140.68632)"
+       sodipodi:nodetypes="ccccc" />
   </g>
 </svg>

@@ -1,7 +1,12 @@
 extends Node2D
 
+onready var FPS = get_node("Kanvaso/FPS")
+
 func _ready():
-	pass
+	set_process(true)
+
+func _process(delta):
+	FPS.set_text(str(int(1.0/delta)))
 
 func _on_Iri_pressed():
 	Input.action_press("iri")
