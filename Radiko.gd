@@ -7,9 +7,15 @@ func _ready():
 	pass
 
 func _on_Servilo_pressed():
+	get_node("/root/Radiko/Servilo").queue_free()
+	get_node("/root/Radiko/Kliento").queue_free()
+	get_node("/root/Radiko/Nomo").queue_free()
 	Ludstato.servi(Nomo.get_text())
 
 func _on_Kliento_pressed():
+	get_node("/root/Radiko/Servilo").queue_free()
+	get_node("/root/Radiko/Kliento").queue_free()
+	get_node("/root/Radiko/Nomo").queue_free()
 	Ludstato.aligxi(Nomo.get_text())
 
 func _on_Testilo_body_entered( korpo ):
