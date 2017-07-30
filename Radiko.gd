@@ -1,12 +1,20 @@
 extends Node2D
 
-onready var FPS = get_node("Kanvaso/FPS")
+onready var Nomo = get_node("Nomo")
+onready var Testilo = get_node("Testilo")
 
 func _ready():
-	set_process(true)
+	pass
 
-func _process(delta):
-	FPS.set_text(str(int(1.0/delta)))
+func _on_Servilo_pressed():
+	Ludstato.servi(Nomo.get_text())
+
+func _on_Kliento_pressed():
+	Ludstato.aligxi(Nomo.get_text())
+
+func _on_Testilo_body_entered( korpo ):
+	if korpo.tipo == "ludanto":
+		Testilo.position.x += 200
 
 func _on_Iri_pressed():
 	Input.action_press("iri")
@@ -28,6 +36,3 @@ func _on_Turni_maldekstre_released():
 
 func _on_Pafi_pressed():
 	Input.action_press("pafi")
-
-func _on_Pafi_released():
-	Input.action_release("pafi")

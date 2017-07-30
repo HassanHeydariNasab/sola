@@ -1,0 +1,128 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Ludanto.gd" type="Script" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 40, 40 )
+
+[node name="Ludanto" type="KinematicBody2D"]
+
+input_pickable = false
+collision_layer = 2
+collision_mask = 2050
+collision/safe_margin = 0.08
+script = ExtResource( 1 )
+_sections_unfolded = [ "Collision", "collision" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+shape = SubResource( 1 )
+
+[node name="Id" type="Label" parent="."]
+
+margin_left = -88.0
+margin_top = 24.0
+margin_right = -48.0
+margin_bottom = 38.0
+rect_rotation = 270.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "-1"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect" ]
+
+[node name="Kuglujo" type="Position2D" parent="."]
+
+position = Vector2( 78, 0 )
+
+[node name="Vivo" type="Polygon2D" parent="."]
+
+position = Vector2( -8, 0 )
+polygon = PoolVector2Array( -50, -30, -50, 30, -60, 30, -60, -30 )
+uv = PoolVector2Array(  )
+color = Color( 0, 0.690196, 1, 1 )
+vertex_colors = PoolColorArray(  )
+offset = Vector2( 0, 0 )
+texture = null
+texture_offset = Vector2( 0, 0 )
+texture_scale = Vector2( 1, 1 )
+texture_rotation = 0.0
+invert_enable = false
+invert_border = 100.0
+_sections_unfolded = [ "Transform" ]
+
+[node name="Aspekto" type="Polygon2D" parent="."]
+
+polygon = PoolVector2Array( -40, -40, 40, -40, 40, 40, -40, 40 )
+uv = PoolVector2Array(  )
+color = Color( 1, 1, 1, 1 )
+vertex_colors = PoolColorArray(  )
+offset = Vector2( 0, 0 )
+texture = null
+texture_offset = Vector2( 0, 0 )
+texture_scale = Vector2( 1, 1 )
+texture_rotation = 0.0
+invert_enable = false
+invert_border = 100.0
+
+[node name="Konturo" type="Polygon2D" parent="Aspekto"]
+
+polygon = PoolVector2Array( 40, -40, -40, -40, -40, 40, 40, 40 )
+uv = PoolVector2Array(  )
+color = Color( 0.458824, 0.458824, 0.458824, 1 )
+vertex_colors = PoolColorArray(  )
+offset = Vector2( 0, 0 )
+texture = null
+texture_offset = Vector2( 0, 0 )
+texture_scale = Vector2( 1, 1 )
+texture_rotation = 0.0
+invert_enable = true
+invert_border = 10.0
+_sections_unfolded = [ "Invert" ]
+
+[node name="Kuglujo_A" type="Polygon2D" parent="Aspekto"]
+
+polygon = PoolVector2Array( 40, -24, 24, -24, 16, -8, 40, -8 )
+uv = PoolVector2Array(  )
+color = Color( 0.117647, 0.533333, 0.898039, 1 )
+vertex_colors = PoolColorArray(  )
+offset = Vector2( 0, 0 )
+texture = null
+texture_offset = Vector2( 0, 0 )
+texture_scale = Vector2( 1, 1 )
+texture_rotation = 0.0
+invert_enable = false
+invert_border = 100.0
+
+[node name="Kuglujo_B" type="Polygon2D" parent="Aspekto"]
+
+polygon = PoolVector2Array( 16, 8, 40, 8, 40, 24, 24, 24 )
+uv = PoolVector2Array(  )
+color = Color( 0.117647, 0.533333, 0.898039, 1 )
+vertex_colors = PoolColorArray(  )
+offset = Vector2( 0, 0 )
+texture = null
+texture_offset = Vector2( 0, 0 )
+texture_scale = Vector2( 1, 1 )
+texture_rotation = 0.0
+invert_enable = false
+invert_border = 100.0
+
+[node name="Resxargxo" type="Timer" parent="."]
+
+process_mode = 1
+wait_time = 0.2
+one_shot = false
+autostart = true
+
+[connection signal="timeout" from="Resxargxo" to="." method="_on_Resxargxo_timeout"]
+
+

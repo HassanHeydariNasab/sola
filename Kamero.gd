@@ -1,9 +1,13 @@
 extends Camera2D
 
-onready var Sola = get_tree().get_root().get_node("Radiko/Sola/Sola")
+var Ludanto
 
 func _ready():
-	set_process(true)
+#	print_tree()
+#	Ludanto = get_node("../Ludantoj/Ludanto/Ludanto")
+#	set_process(true)
+	pass
 
 func _process(delta):
-	set_offset(Sola.get_global_pos())
+#	set_offset(Ludanto.get_position())
+	pass
